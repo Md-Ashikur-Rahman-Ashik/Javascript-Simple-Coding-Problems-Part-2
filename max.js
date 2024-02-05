@@ -31,4 +31,24 @@ function getMaxThree(num1, num2, num3){
 }
 
 const getThreeMax = getMaxThree(100, 60 ,80);
-console.log(getThreeMax);
+// console.log(getThreeMax);
+
+const heights = [65, 66, 68, 72, 78, 60, 65, 66];
+
+function getHeight(numbers){
+    // console.log(numbers);
+    let max = numbers[0];
+    for(const number of numbers){
+        // console.log(number);
+        if(number > max){
+            max = number;
+        }
+    }
+    return max;
+    // const max = Math.max(number);
+    // return max;
+}
+
+const height = getHeight(heights);
+// console.log(height);
+console.log("Max value is:", height);

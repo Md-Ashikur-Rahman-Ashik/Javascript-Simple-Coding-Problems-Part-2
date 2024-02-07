@@ -71,9 +71,9 @@ const full = fullName("Rayhan", "Sohan");
 function getPrice(product) {
   // console.log(product.price);
   const price = product.price;
-//   if (typeof product.price !== "number") {
-//     return "Please include a price.";
-//   }
+  //   if (typeof product.price !== "number") {
+  //     return "Please include a price.";
+  //   }
   return price;
 }
 
@@ -89,14 +89,14 @@ const total = getPrice({
 
 // console.log(total);
 
-function getSecond(numbers){
-    // console.log(typeof numbers);
-    // console.log(Array.isArray(numbers));
-    if(Array.isArray(numbers) === false){
-        return "Please input an Array."
-    }
-    const second = numbers[1];
-    return second;
+function getSecond(numbers) {
+  // console.log(typeof numbers);
+  // console.log(Array.isArray(numbers));
+  if (Array.isArray(numbers) === false) {
+    return "Please input an Array.";
+  }
+  const second = numbers[1];
+  return second;
 }
 
 const second = getSecond([1, 2, 3, 4, 5]);
